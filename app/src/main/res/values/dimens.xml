@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="ui_touch_target">48dp</dimen>
+    <dimen name="ui_space_4">4dp</dimen>
+    <dimen name="ui_space_8">8dp</dimen>
+    <dimen name="ui_space_12">12dp</dimen>
+    <dimen name="ui_space_16">16dp</dimen>
+    <dimen name="ui_space_20">20dp</dimen>
+    <dimen name="ui_space_24">24dp</dimen>
+    <dimen name="ui_radius_small">8dp</dimen>
+    <dimen name="ui_radius_card">12dp</dimen>
+    <dimen name="ui_radius_pill">999dp</dimen>
+    <dimen name="ui_text_title">22sp</dimen>
+    <dimen name="ui_text_body">16sp</dimen>
+    <dimen name="ui_text_secondary">14sp</dimen>
+</resources>

@@ -1,0 +1,72 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.local
+local.properties
+keystore.properties
+
+# Private keys, signing material, and credentials
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+keystore/
+credentials.json
+service-account*.json
+
+# Dependencies and generated output
+node_modules/
+vendor/
+.gradle/
+.gradle-user/
+.venv/
+venv/
+dist/
+build/
+out/
+target/
+coverage/
+*.egg-info/
+*.apk
+*.aab
+*.idsig
+
+# Caches and temporary files
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+*.tmp
+*.temp
+*.log
+logs/
+
+# IDE and operating-system state
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local user/runtime data
+user-data/
+*.local.db
+*.local.sqlite
+*.local.sqlite3
+
+# Speech-model assets supplied separately in the public source snapshot
+app/src/main/assets/asr/*.onnx
+app/src/main/assets/asr/tokens.txt
+app/src/main/assets/asr/self-test.wav
+app/src/main/assets/asr-quality/*.onnx
+app/src/main/assets/asr-quality/tokens.txt
+
+# Local clean-history public source export
+.public-export/

@@ -1,0 +1,20 @@
+<resources>
+    <color name="black">#111111</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Graphite blue visual system. Keep these names stable for programmatic screens. -->
+    <color name="graphite_background">#F7F6F2</color>
+    <color name="graphite_surface">#FFFFFF</color>
+    <color name="graphite_text_primary">#17233A</color>
+    <color name="graphite_primary">#496A8A</color>
+    <color name="graphite_primary_pressed">#3C5872</color>
+    <color name="graphite_primary_disabled">#AAB8C5</color>
+    <color name="graphite_selected">#E8EEF3</color>
+    <color name="graphite_text_secondary">#66758A</color>
+    <color name="graphite_border">#D8E0E7</color>
+    <color name="graphite_danger">#B34F52</color>
+    <color name="graphite_danger_pressed">#8F3F43</color>
+    <color name="graphite_danger_disabled">#C7A1A3</color>
+    <color name="graphite_badge">#EEF2F5</color>
+    <color name="recording_red">#C94D4D</color>
+</resources>
