@@ -4,7 +4,10 @@ All notable changes to this project will be documented here. New releases use th
 
 ## Unreleased
 
-- Prepared the `0.5.0` release candidate with a three-part version name and a higher Android version code.
+## 0.5.0 - 2026-09-23 (preview)
+
+- Published signed `full` and `lite` preview APKs with the existing v3 certificate. The full package bundles Zipformer, SenseVoice, and Silero VAD with license notices; the lite package omits model weights. Device regression testing is pending.
+- Standardized the Android version name to three parts and increased its version code.
 
 - Replaced the single reading-document slot with a local TXT/EPUB bookshelf, per-document progress and chapter state, current-document selection, safe one-time migration, and a neutral “进度” entry that keeps the original front page free of persistent entertainment labels.
 - Added direct EPUB chapter selection with a short chapter-opening preview while retaining percentage and character-offset controls.

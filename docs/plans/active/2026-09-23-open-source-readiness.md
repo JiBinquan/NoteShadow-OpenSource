@@ -5,7 +5,7 @@ Date: 2026-09-23. Working branch: `develop`. This is a release audit record, not
 ## Decisions
 
 - Keep the existing development repository and its Git history private. Its history contains bundled speech-model weights and vocabularies. Their exact license chain and notice obligations require verification before that history could be public.
-- Prepare a fresh-history public source repository without Zipformer, SenseVoice, Silero VAD weights, vocabularies, or self-test audio. Do not publish an APK containing those assets.
+- The first public phase used a fresh-history source repository without model files or self-test audio. A later `0.5.0` preview release adds separate full and no-model APKs after source-lineage review, attribution, and license texts; the public Git history still excludes weights.
 - Project-owned code and documentation use Apache-2.0. The README banner, demonstration screenshots, and launcher icon use CC BY 4.0 with attribution; see `ASSETS_LICENSE.md`.
 - Use three-part SemVer for new tags, starting with `0.5.0`; preserve historical tag names. Keep the Android application ID and signing identity stable. The release `versionCode` is 5.
 - Use GitHub private vulnerability reporting once the public repository exists and its setting is enabled.
@@ -20,7 +20,8 @@ Date: 2026-09-23. Working branch: `develop`. This is a release audit record, not
 
 ## Verification and remaining release gates
 
-- After the model-loading change, `scripts/build.ps1 -Tasks testDebugUnitTest,assembleRelease` passed on 2026-09-23 (unit tests, Java compilation, lint, R8, and resource shrinking). The source-only snapshot still needs the same check.
+- After the model-loading change, `scripts/build.ps1 -Tasks testDebugUnitTest,assembleRelease` passed on 2026-09-23 (unit tests, Java compilation, lint, R8, and resource shrinking).
 - The public repository `JiBinquan/NoteShadow-OpenSource` was created with one new root commit and no weights, vocabularies, recordings, signing materials, or build output. Targeted source and APK scans found no bundled models or test audio. The snapshot passed unit tests, Debug build, and Release build on 2026-09-23.
 - GitHub private vulnerability reporting is enabled for the public repository; `SECURITY.md` describes the active channel.
-- Device testing of recording, model installation, transcription, storage behavior, and an update signed with the existing certificate remain separate from source publication. No signed APK is published in this source-only release.
+- The `0.5.0` full and no-model Release variants passed build checks; both signed APKs passed v1/v2/v3 signature verification and use the same certificate as the old v3 APK. The full APK contains three model weights, two vocabularies, and four license/attribution files; the no-model APK contains no weights or vocabularies. Neither contains self-test audio.
+- Device regression testing of recording, model installation, transcription, storage, and in-place upgrade remains outstanding; publish APKs as a prerelease until these checks pass.

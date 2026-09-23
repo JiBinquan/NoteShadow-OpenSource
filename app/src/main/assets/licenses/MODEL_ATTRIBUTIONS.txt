@@ -1,0 +1,30 @@
+NoteShadow model and runtime attributions
+
+Zipformer Chinese streaming CTC INT8
+- File in the full APK: model.int8.onnx and tokens.txt
+- ONNX conversion: csukuangfj / k2-fsa, sherpa-onnx-streaming-zipformer-small-ctc-zh-int8-2025-04-01
+  https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-small-ctc-zh-int8-2025-04-01
+- Original checkpoint: csukuangfj, icefall-streaming-zipformer-small-ctc-zh-2025-04-01 (Apache-2.0)
+  https://huggingface.co/csukuangfj/icefall-streaming-zipformer-small-ctc-zh-2025-04-01
+
+SenseVoice Small Yue INT8
+- File in the full APK: sensevoice.int8.onnx and tokens.txt
+- ONNX conversion: csukuangfj / k2-fsa, sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09
+  https://huggingface.co/csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09
+- Conversion source: ASLP-lab, WSYue-ASR/sensevoice_small_yue (repository declares Apache-2.0)
+  https://huggingface.co/ASLP-lab/WSYue-ASR
+- Underlying SenseVoiceSmall model: Alibaba Group / FunAudioLLM, FunASR Model Open Source License Agreement v1.1
+  https://huggingface.co/FunAudioLLM/SenseVoiceSmall
+  https://github.com/modelscope/FunASR/blob/main/MODEL_LICENSE
+- The SenseVoice name and author attribution are retained here. This model license is distinct from NoteShadow's Apache-2.0 code license.
+
+Silero VAD
+- File in the full APK: silero_vad.onnx
+- Silero Team, MIT License
+  https://github.com/snakers4/silero-vad
+
+sherpa-onnx runtime
+- Android JNI library and Java API: k2-fsa, Apache-2.0
+  https://github.com/k2-fsa/sherpa-onnx
+
+The license texts are included alongside this notice in the APK's assets/licenses directory.

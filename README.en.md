@@ -6,7 +6,7 @@
 
 **Record, transcribe, and organize classes or meetings on your tablet while keeping control of your notes.** NoteShadow is an Android tablet app for local audio capture, on-device speech recognition, and course notes. An optional model interface can assist with writing when you explicitly invoke it.
 
-> **Project status:** The `0.5.0` source is public, while device validation continues. No APK is provided. The license chain and attribution duties for the exact bundled model files still need verification. See [License and distribution](#license-and-distribution).
+> **Project status:** The `0.5.0` source and preview APKs are public while device validation continues. Read [Download preview APKs](#download-preview-apks) and [License and distribution](#license-and-distribution) first.
 
 ## At a glance
 
@@ -33,6 +33,12 @@ Screenshots show the current development UI; the eventual release may change.
 ## Privacy and data
 
 Recording, offline speech recognition, reading, and ordinary notes require no account or cloud service. When you use the optional model feature, the app sends only the question you explicitly submit and previous successful model turns from that course to the selected service. It does not automatically upload recordings, transcripts, reading documents, or unrelated notes. API keys are configured on the device and are not bundled in the APK. System cloud backup is disabled; device transfer behavior on Android 12 and later may vary by manufacturer. On Android 10 and later, each completed recording is also copied to public `Music/NoteShadow`. Deleting a course record removes its app-private copy, not that public copy or prior exports. See [Privacy and data](PRIVACY.md).
+
+## Download preview APKs
+
+The [v0.5.0 preview release](https://github.com/JiBinquan/NoteShadow-OpenSource/releases/tag/v0.5.0) offers two packages. `full` bundles the Zipformer, SenseVoice, and Silero VAD models for their offline transcription modes. `lite` omits those models; install them separately as described below to use offline transcription. Qwen3-ASR must be installed separately for either package. Both packages have the same application ID, version, and signing certificate: they are two builds of the same app. The release page lists SHA-256 checksums and model attribution.
+
+This preview has not completed device regression testing. When upgrading an existing v3 installation, preserve its app data and do not uninstall it to work around a signature mismatch; compare the release certificate fingerprint before installation.
 
 ## Build from source
 
