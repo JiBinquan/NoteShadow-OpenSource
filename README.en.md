@@ -63,4 +63,4 @@ Before contributing, read [AGENTS.md](AGENTS.md) and the [coding standards](docs
 
 ## License and distribution
 
-Original NoteShadow code and documentation are licensed under [Apache License 2.0](LICENSE). The project's banner, launcher icon, and demonstration screenshots use [CC BY 4.0](ASSETS_LICENSE.md). Third-party code, native libraries, models, and test audio retain their own terms; see the [third-party notices](THIRD_PARTY_NOTICES.md). 
+Original NoteShadow code and documentation are licensed under [Apache License 2.0](LICENSE). The project's banner, launcher icon, and demonstration screenshots use [CC BY 4.0](ASSETS_LICENSE.md). Third-party code, native libraries, models, and test audio retain their own terms; see the [third-party notices](THIRD_PARTY_NOTICES.md).
