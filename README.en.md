@@ -1,12 +1,12 @@
 # NoteShadow · 墨鱼笔记
 
-[简体中文](README.md) · [Changelog](CHANGELOG.md) · [Third-party notices](THIRD_PARTY_NOTICES.md)
+[简体中文](README.md) · [Full user guide](docs/USER_GUIDE.en.md) · [Changelog](CHANGELOG.md) · [Third-party notices](THIRD_PARTY_NOTICES.md)
 
 ![NoteShadow banner](docs/assets/readme/banner.png)
 
 **Record, transcribe, and organize classes or meetings on your tablet while keeping control of your notes.** NoteShadow is an Android tablet app for local audio capture, on-device speech recognition, and course notes. An optional model interface can assist with writing when you explicitly invoke it.
 
-> **Project status:** The `0.5.0` source and preview APKs are public while device validation continues. Read [Download preview APKs](#download-preview-apks) and [License and distribution](#license-and-distribution) first.
+> **Project status:** The `0.5.1` preview APKs are public while device validation continues. Read [Download preview APKs](#download-preview-apks) and the [full user guide](docs/USER_GUIDE.en.md) first.
 
 ## At a glance
 
@@ -24,7 +24,7 @@ Screenshots show the current development UI; the eventual release may change.
 
 ## Features
 
-- **Recording and offline transcription:** Save AAC/M4A audio and transcribe live speech or an audio file with on-device models. The live view offers single-output and optional dual-output modes. The default Qwen modes require separate model files, as described below.
+- **Recording and offline transcription:** Save AAC/M4A audio and transcribe live speech or an audio file with on-device models. The live view offers single-output and optional dual-output modes. The `full` APK includes the Qwen model needed by the default mode; `lite` requires models to be installed separately.
 - **Course notes:** Write timestamped Markdown while transcription continues, capture or import images, and switch between source editing and read-only preview. `/arc [n]` inserts recent formal transcript lines without calling an online model.
 - **Records and export:** Organize records by project, search transcripts, archive or restore records, and export formal transcripts, notes with images, or complete course packages including recordings.
 - **Local reading:** Import TXT/EPUB documents with independent progress. An optional dual-output view can temporarily mix reading text into the display; formal transcript exports exclude it.
@@ -62,7 +62,7 @@ The script runs JVM unit tests and builds a Debug APK. You can omit `-Online` on
 
 ## Documentation and contributions
 
-- [Architecture](ARCHITECTURE.md) · [Build and testing](docs/engineering/TESTING.md) · [Release process](docs/engineering/RELEASE_PROCESS.md)
+- [Full user guide](docs/USER_GUIDE.en.md) · [Architecture](ARCHITECTURE.md) · [Build and testing](docs/engineering/TESTING.md) · [Release process](docs/engineering/RELEASE_PROCESS.md)
 - [Changelog](CHANGELOG.md) · [Roadmap](docs/ROADMAP.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Report an issue](https://github.com/JiBinquan/NoteShadow-OpenSource/issues)
 
 Before contributing, read [AGENTS.md](AGENTS.md) and the [coding standards](docs/engineering/CODING_STANDARDS.md). Do not include real recordings, notes, or API keys in issues, screenshots, or test data.
