@@ -4,7 +4,7 @@ Date: 2026-09-23. Working branch: `develop`. This is a release audit record, not
 
 ## Decisions
 
-- Keep the existing development repository and its Git history private. Its history contains bundled speech-model weights and vocabularies whose redistribution permission is not established.
+- Keep the existing development repository and its Git history private. Its history contains bundled speech-model weights and vocabularies. Their exact license chain and notice obligations require verification before that history could be public.
 - Prepare a fresh-history public source repository without Zipformer, SenseVoice, Silero VAD weights, vocabularies, or self-test audio. Do not publish an APK containing those assets.
 - Project-owned code and documentation use Apache-2.0. The README banner, demonstration screenshots, and launcher icon use CC BY 4.0 with attribution; see `ASSETS_LICENSE.md`.
 - Use three-part SemVer for new tags, starting with `0.5.0`; preserve historical tag names. Keep the Android application ID and signing identity stable. The release `versionCode` is 5.
