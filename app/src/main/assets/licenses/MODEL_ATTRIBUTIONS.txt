@@ -1,5 +1,13 @@
 NoteShadow model and runtime attributions
 
+Qwen3-ASR 0.6B INT8
+- Files in the full APK: conv_frontend.onnx, encoder.int8.onnx, decoder.int8.onnx, tokenizer files
+- Original model: Qwen team, Qwen3-ASR-0.6B (Apache-2.0)
+  https://huggingface.co/Qwen/Qwen3-ASR-0.6B
+- ONNX export: Wasser1462 / zengshuishui, Qwen3-ASR-onnx
+  https://github.com/Wasser1462/Qwen3-ASR-onnx
+  https://modelscope.cn/models/zengshuishui/Qwen3-ASR-onnx/files
+
 Zipformer Chinese streaming CTC INT8
 - File in the full APK: model.int8.onnx and tokens.txt
 - ONNX conversion: csukuangfj / k2-fsa, sherpa-onnx-streaming-zipformer-small-ctc-zh-int8-2025-04-01

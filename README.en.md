@@ -36,7 +36,7 @@ Recording, offline speech recognition, reading, and ordinary notes require no ac
 
 ## Download preview APKs
 
-The [v0.5.0 preview release](https://github.com/JiBinquan/NoteShadow-OpenSource/releases/tag/v0.5.0) offers two packages. `full` bundles the Zipformer, SenseVoice, and Silero VAD models for their offline transcription modes. `lite` omits those models; install them separately as described below to use offline transcription. Qwen3-ASR must be installed separately for either package. Both packages have the same application ID, version, and signing certificate: they are two builds of the same app. The release page lists SHA-256 checksums and model attribution.
+The [v0.5.1 preview release](https://github.com/JiBinquan/NoteShadow-OpenSource/releases/tag/v0.5.1) offers two packages. `full` bundles Qwen3-ASR, Zipformer, SenseVoice, and Silero VAD; it copies Qwen3 to app-specific storage on first use. `lite` omits all models; install them separately as described below to use offline transcription. Both packages have the same application ID, version, and signing certificate: they are two builds of the same app. The release page lists SHA-256 checksums and model attribution.
 
 This preview has not completed device regression testing. When upgrading an existing v3 installation, preserve its app data and do not uninstall it to work around a signature mismatch; compare the release certificate fingerprint before installation.
 

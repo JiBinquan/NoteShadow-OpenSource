@@ -328,23 +328,7 @@ public final class AudioFileTranscriber {
         return -1;
     }
 
-    private File requireQwenModel() {
-        File external = context.getExternalFilesDir(null);
-        if (external == null) throw new IllegalStateException("无法访问应用模型目录");
-        File dir = new File(external, "models/qwen3-int8");
-        require(new File(dir, "conv_frontend.onnx"), 40_000_000L);
-        require(new File(dir, "encoder.int8.onnx"), 170_000_000L);
-        require(new File(dir, "decoder.int8.onnx"), 700_000_000L);
-        require(new File(dir, "tokenizer/vocab.json"), 2_000_000L);
-        require(new File(dir, "tokenizer/merges.txt"), 1_000_000L);
-        require(new File(dir, "tokenizer/tokenizer_config.json"), 100L);
-        return dir;
-    }
-
-    private static void require(File file, long minBytes) {
-        if (!file.isFile() || file.length() < minBytes)
-            throw new IllegalStateException("Qwen 模型未安装完整：" + file.getName());
-    }
+    private File requireQwenModel() throws Exception { return QwenModelFiles.require(context); }
 
     private OfflineRecognizer createQwen(File dir) {
         OfflineQwen3AsrModelConfig qwen = OfflineQwen3AsrModelConfig.builder()

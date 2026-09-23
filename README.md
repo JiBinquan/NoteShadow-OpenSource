@@ -36,7 +36,7 @@
 
 ## 下载预览 APK
 
-[v0.5.0 预览版](https://github.com/JiBinquan/NoteShadow-OpenSource/releases/tag/v0.5.0)提供两种安装包：`full` 内含 Zipformer、SenseVoice 和 Silero VAD 模型，可以使用相应的离线转写方式；`lite` 不含这些模型，需按下文自行安装模型后才能使用离线转写。Qwen3-ASR 模型两包均需另行安装。两包使用同一应用 ID、版本号和签名证书，是同一应用的不同打包方式。发布页列有 SHA-256 校验值与第三方模型说明。
+[v0.5.1 预览版](https://github.com/JiBinquan/NoteShadow-OpenSource/releases/tag/v0.5.1)提供两种安装包：`full` 内含 Qwen3-ASR、Zipformer、SenseVoice 和 Silero VAD 模型，首次使用 Qwen3 时会将模型复制到应用专属目录；`lite` 不含模型，需按下文自行安装模型后才能使用离线转写。两包使用同一应用 ID、版本号和签名证书，是同一应用的不同打包方式。发布页列有 SHA-256 校验值与第三方模型说明。
 
 这是尚未完成设备回归测试的预览版。升级已有 v3 安装时请保留原应用数据，不要为解决签名冲突而卸载；安装前可核对发布页的签名证书指纹。
 

@@ -16,8 +16,8 @@ android {
         applicationId 'com.noteshadow.app3'
         minSdk 23
         targetSdk 31
-        versionCode 5
-        versionName '0.5.0'
+        versionCode 6
+        versionName '0.5.1'
     }
 
     signingConfigs {

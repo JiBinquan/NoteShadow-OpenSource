@@ -67,6 +67,7 @@ app/src/main/assets/asr/tokens.txt
 app/src/main/assets/asr/self-test.wav
 app/src/main/assets/asr-quality/*.onnx
 app/src/main/assets/asr-quality/tokens.txt
+app/src/main/assets/qwen3-int8/
 
 # Local clean-history public source export
 .public-export/
