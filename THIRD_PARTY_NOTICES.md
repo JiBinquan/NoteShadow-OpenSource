@@ -6,6 +6,13 @@ This public source repository excludes speech-model weights, their token files, 
 
 The full APK release includes model files under the cited licenses. Its `assets/licenses/` directory contains the original license texts and an attribution manifest. The no-model APK contains the same notices but no speech-model weights or vocabularies. The self-test audio is not distributed.
 
+## Qwen3-ASR 0.6B INT8
+
+- Model: `sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25`.
+- Original Qwen model: https://huggingface.co/Qwen/Qwen3-ASR-0.6B (Apache-2.0).
+- ONNX export source: https://github.com/Wasser1462/Qwen3-ASR-onnx ; converted files were downloaded from https://modelscope.cn/models/zengshuishui/Qwen3-ASR-onnx/files and documented by https://csukuangfj.github.io/sherpa/onnx/qwen3-asr/pretrained.html .
+- The full APK bundles the three ONNX files and tokenizer vocabulary/configuration. Test audio is excluded. Its attribution manifest and Apache-2.0 license text are included in the APK.
+
 ## sherpa-onnx 1.13.4
 
 - Project: https://github.com/k2-fsa/sherpa-onnx

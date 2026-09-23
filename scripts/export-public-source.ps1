@@ -43,7 +43,7 @@ try {
     foreach ($path in $tracked) {
         $normalized = $path.Replace('\', '/')
         if ($excludedSet.Contains($normalized)) { continue }
-        if ($normalized -match '^app/src/main/assets/(asr|asr-quality)/') {
+        if ($normalized -match '^app/src/main/assets/(asr|asr-quality|qwen3-int8)/') {
             throw "Unreviewed speech asset in tracked files: $normalized"
         }
         $source = Join-Path $projectRoot $path

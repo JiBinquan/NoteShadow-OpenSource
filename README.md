@@ -1,12 +1,12 @@
 # 墨鱼笔记 · NoteShadow
 
-[English](README.en.md) · [更新记录](CHANGELOG.md) · [第三方组件](THIRD_PARTY_NOTICES.md)
+[English](README.en.md) · [完整使用说明](docs/USER_GUIDE.md) · [更新记录](CHANGELOG.md) · [第三方组件](THIRD_PARTY_NOTICES.md)
 
 ![墨鱼笔记品牌横幅](docs/assets/readme/banner.png)
 
 **在平板上录音、实时转写、整理笔记，并把课程资料留在自己手中。** 墨鱼笔记是一款面向课堂与会议的 Android 平板应用。录音和语音识别可在设备上离线完成；需要时，也可以主动调用自行配置的模型接口辅助写作。
 
-> **项目状态**：`0.5.0` 源码和预览 APK 已公开，设备验证仍在进行。请先阅读[下载说明](#下载预览-apk)和[许可与分发](#许可与分发)。
+> **项目状态**：`0.5.1` 预览 APK 已公开，设备验证仍在进行。请先阅读[下载说明](#下载预览-apk)和[完整使用说明](docs/USER_GUIDE.md)。
 
 ## 一眼了解
 
@@ -24,7 +24,7 @@
 
 ## 能做什么
 
-- **录音与离线转写**：保存 AAC/M4A 录音；使用设备上的语音模型进行实时转写和录音文件转写。实时转写提供单线输出和可选的双线输出。默认的 Qwen 转写模式需要另外安装模型文件，见下文。
+- **录音与离线转写**：保存 AAC/M4A 录音；使用设备上的语音模型进行实时转写和录音文件转写。实时转写提供单线输出和可选的双线输出。`full` APK 已包含默认方式所需的 Qwen 模型；`lite` 包需要自行安装模型。
 - **课程笔记**：在转写运行时写带时间戳的 Markdown 笔记，拍照或导入图片，切换编辑与只读预览。`/arc [n]` 可将最近的正式转写片段插入笔记，不调用在线模型。
 - **整理与导出**：按项目管理课程记录，搜索转写、归档、放入回收站并恢复；按需导出正式转写、笔记与图片，或包含录音的完整课程包。
 - **本地阅读**：导入 TXT/EPUB 文档，分别保存阅读进度。可选择在双线转写视图中临时混排阅读内容；导出的正式转写不包含这些内容。
@@ -36,7 +36,7 @@
 
 ## 下载预览 APK
 
-[v0.5.0 预览版](https://github.com/JiBinquan/NoteShadow-OpenSource/releases/tag/v0.5.0)提供两种安装包：`full` 内含 Zipformer、SenseVoice 和 Silero VAD 模型，可以使用相应的离线转写方式；`lite` 不含这些模型，需按下文自行安装模型后才能使用离线转写。Qwen3-ASR 模型两包均需另行安装。两包使用同一应用 ID、版本号和签名证书，是同一应用的不同打包方式。发布页列有 SHA-256 校验值与第三方模型说明。
+[v0.5.1 预览版](https://github.com/JiBinquan/NoteShadow-OpenSource/releases/tag/v0.5.1)提供两种安装包：`full` 内含 Qwen3-ASR、Zipformer、SenseVoice 和 Silero VAD 模型，首次使用 Qwen3 时会将模型复制到应用专属目录；`lite` 不含模型，需按下文自行安装模型后才能使用离线转写。两包使用同一应用 ID、版本号和签名证书，是同一应用的不同打包方式。发布页列有 SHA-256 校验值与第三方模型说明。
 
 这是尚未完成设备回归测试的预览版。升级已有 v3 安装时请保留原应用数据，不要为解决签名冲突而卸载；安装前可核对发布页的签名证书指纹。
 
@@ -62,7 +62,7 @@ cd NoteShadow-OpenSource
 
 ## 项目文档与参与
 
-- [架构说明](ARCHITECTURE.md) · [构建与测试](docs/engineering/TESTING.md) · [发布流程](docs/engineering/RELEASE_PROCESS.md)
+- [完整使用说明](docs/USER_GUIDE.md) · [架构说明](ARCHITECTURE.md) · [构建与测试](docs/engineering/TESTING.md) · [发布流程](docs/engineering/RELEASE_PROCESS.md)
 - [更新记录](CHANGELOG.md) · [路线图](docs/ROADMAP.md) · [参与贡献](CONTRIBUTING.md) · [安全报告](SECURITY.md) · [问题反馈](https://github.com/JiBinquan/NoteShadow-OpenSource/issues)
 
 提交改动前，请阅读 [AGENTS.md](AGENTS.md) 和[编码规范](docs/engineering/CODING_STANDARDS.md)。请不要在 Issue、截图或测试资料中上传真实录音、笔记或 API Key。

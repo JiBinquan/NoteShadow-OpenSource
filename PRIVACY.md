@@ -2,7 +2,7 @@
 
 [English](#english) · [返回中文 README](README.md)
 
-本说明描述当前 `0.5.0` 候选版的实际数据行为。墨鱼笔记不要求账户，也没有集成分析或广告 SDK。
+本说明描述当前 `0.5.1` 预览版的实际数据行为。墨鱼笔记不要求账户，也没有集成分析或广告 SDK。
 
 ## 数据保存在何处
 
@@ -26,7 +26,7 @@
 
 [中文](#隐私与数据说明--privacy-and-data) · [English README](README.en.md)
 
-This document describes the current `0.5.0` release candidate. NoteShadow requires no account and includes no analytics or advertising SDK.
+This document describes the current `0.5.1` preview release. NoteShadow requires no account and includes no analytics or advertising SDK.
 
 ### Storage and deletion
 

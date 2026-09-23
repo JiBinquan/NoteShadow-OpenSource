@@ -4,6 +4,11 @@ All notable changes to this project will be documented here. New releases use th
 
 ## Unreleased
 
+## 0.5.1 - 2026-09-23 (preview)
+
+- Corrected the full APK to bundle Qwen3-ASR as well as Zipformer, SenseVoice, and Silero VAD. Bundled Qwen3 files are installed into app-specific storage on first use; existing user-installed models are preserved.
+- Increased Android `versionCode` to 6 for in-place updates from 0.5.0.
+
 ## 0.5.0 - 2026-09-23 (preview)
 
 - Published signed `full` and `lite` preview APKs with the existing v3 certificate. The full package bundles Zipformer, SenseVoice, and Silero VAD with license notices; the lite package omits model weights. Device regression testing is pending.

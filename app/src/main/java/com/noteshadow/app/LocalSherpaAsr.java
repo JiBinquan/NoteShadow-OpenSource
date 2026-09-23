@@ -662,23 +662,7 @@ public final class LocalSherpaAsr implements AsrEngine {
                 + "。完整路径已包含文件名。");
     }
 
-    /** Qwen is deliberately kept outside the APK in app-scoped storage. */
-    private File prepareQwenModel() {
-        File external = context.getExternalFilesDir(null);
-        if (external == null) throw new IllegalStateException("无法访问应用模型目录");
-        File dir = new File(external, "models/qwen3-int8");
-        requireModelFile(new File(dir, "conv_frontend.onnx"), 40_000_000L);
-        requireModelFile(new File(dir, "encoder.int8.onnx"), 170_000_000L);
-        requireModelFile(new File(dir, "decoder.int8.onnx"), 700_000_000L);
-        requireModelFile(new File(dir, "tokenizer/vocab.json"), 2_000_000L);
-        return dir;
-    }
-
-    private void requireModelFile(File file, long minimumLength) {
-        if (!file.isFile() || file.length() < minimumLength) {
-            throw new IllegalStateException("Qwen 模型未安装完整：" + file.getName());
-        }
-    }
+    private File prepareQwenModel() throws Exception { return QwenModelFiles.require(context); }
 
     private File prepareRealtimeModel() throws Exception {
         File dir = new File(context.getFilesDir(), "asr-realtime-v1");
