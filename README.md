@@ -63,4 +63,4 @@ cd NoteShadow-OpenSource
 
 ## 许可与分发
 
-项目**自有代码和文档**采用 [Apache License 2.0](LICENSE)；本项目横幅、应用图标和演示截图采用 [CC BY 4.0](ASSETS_LICENSE.md)。第三方代码、原生库、模型和测试音频按各自条款处理，详见[第三方说明](THIRD_PARTY_NOTICES.md)。本公开仓库采用全新 Git 历史，不包含模型权重、词表和测试音频。开源许可证若覆盖实际使用的模型文件，按许可证条件即可再分发，无需另行取得许可；含模型 APK 将在许可链、署名材料和设备验证完成后考虑发布。
+项目**自有代码和文档**采用 [Apache License 2.0](LICENSE)；本项目横幅、应用图标和演示截图采用 [CC BY 4.0](ASSETS_LICENSE.md)。第三方代码、原生库、模型和测试音频按各自条款处理，详见[第三方说明](THIRD_PARTY_NOTICES.md)。
