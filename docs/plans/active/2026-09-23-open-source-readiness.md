@@ -21,6 +21,6 @@ Date: 2026-09-23. Working branch: `develop`. This is a release audit record, not
 ## Verification and remaining release gates
 
 - After the model-loading change, `scripts/build.ps1 -Tasks testDebugUnitTest,assembleRelease` passed on 2026-09-23 (unit tests, Java compilation, lint, R8, and resource shrinking). The source-only snapshot still needs the same check.
-- Verify the fresh repository has one new root history with no weights, vocabularies, recordings, signing materials, or build output; run targeted secret and privacy scans on its tracked files.
-- Confirm public repository name and enable GitHub private vulnerability reporting after publication. `SECURITY.md` describes the intended channel, which is unavailable before that setting is enabled.
+- The public repository `JiBinquan/NoteShadow-OpenSource` was created with one new root commit and no weights, vocabularies, recordings, signing materials, or build output. Targeted source and APK scans found no bundled models or test audio. The snapshot passed unit tests, Debug build, and Release build on 2026-09-23.
+- GitHub private vulnerability reporting is enabled for the public repository; `SECURITY.md` describes the active channel.
 - Device testing of recording, model installation, transcription, storage behavior, and an update signed with the existing certificate remain separate from source publication. No signed APK is published in this source-only release.

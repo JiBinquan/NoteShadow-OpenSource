@@ -6,7 +6,7 @@
 
 **Record, transcribe, and organize classes or meetings on your tablet while keeping control of your notes.** NoteShadow is an Android tablet app for local audio capture, on-device speech recognition, and course notes. An optional model interface can assist with writing when you explicitly invoke it.
 
-> **Project status:** The configured `0.5.0` build is a release candidate still undergoing device validation. A public release has not been finalized, and redistribution terms for some bundled speech models remain unverified. See [License and distribution](#license-and-distribution).
+> **Project status:** The `0.5.0` source is public, while device validation continues. No APK is provided. Redistribution terms for speech models remain unverified. See [License and distribution](#license-and-distribution).
 
 ## At a glance
 
@@ -63,4 +63,4 @@ Before contributing, read [AGENTS.md](AGENTS.md) and the [coding standards](docs
 
 ## License and distribution
 
-Original NoteShadow code and documentation are licensed under [Apache License 2.0](LICENSE). The project's banner, launcher icon, and demonstration screenshots use [CC BY 4.0](ASSETS_LICENSE.md). Third-party code, native libraries, models, and test audio retain their own terms; see the [third-party notices](THIRD_PARTY_NOTICES.md). Public source will be prepared as a snapshot without model files or the old Git history. No APK containing the models will be released until redistribution rights are confirmed.
+Original NoteShadow code and documentation are licensed under [Apache License 2.0](LICENSE). The project's banner, launcher icon, and demonstration screenshots use [CC BY 4.0](ASSETS_LICENSE.md). Third-party code, native libraries, models, and test audio retain their own terms; see the [third-party notices](THIRD_PARTY_NOTICES.md). This public repository has fresh Git history and excludes model weights, vocabularies, and test audio. No APK containing the models will be released until redistribution rights are confirmed.
